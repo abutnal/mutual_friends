@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="../stylesheets/style.css">
+	<link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
+	<script type="text/javascript" src="../javascripts/jquery.js"></script>
+	<script type="text/javascript" src="../javascripts/bootstrap.min.js"></script>
+
+	<meta charset="utf-8">
+
+</head>
+<body>
+
+	<!-- SET DEBUG=server:* & npm start -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<marquee direction="left"><h3 class="content-justify-center">AB UTNAL, 8722222996</h3></marquee>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 offset-4">
+				<br>
+				
+				<div class="card border-light bg-light">
+					<div class="card-body">
+						<div id="status_msg" class="text-danger text-center"></div>
+						
+						<form action="http://localhost:3000/login" method="post" id="loginForm">
+							<div class="formRow">
+								<label class="form-label" for="" id="label-email"id="label-email">Email</label>
+								<input type="text" autocomplete="off"  class="form-control" name="email" id="email">
+							</div>
+
+							<div class="formRow">
+								<label class="form-label" for="" id="label-password" id="label-password">Password</label>
+								<input type="password" autocomplete="off"  class="form-control" name="password" id="password">
+							</div>
+							<a href="/register" class="text-success float-left mt-2">Click here to register</a>
+							<div class="formRow"><button class="btn btn-success float-right btn-register">Login</button>		</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<script type="text/javascript" src="../javascripts/login.js"></script>
+</body>
+</html>
