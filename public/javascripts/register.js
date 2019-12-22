@@ -206,4 +206,9 @@ $(document).ready(function(){
 });
 
 
-
+// Date and time____________________________________________________________________
+$(document).ready(function(){
+var dt = new Date();
+var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+$('#date').append(dt);
+});
